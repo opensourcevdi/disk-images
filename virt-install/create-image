@@ -14,6 +14,7 @@ fi
 
 qemu-img create -f qcow2 -- "$image_tmp" 100G
 virt-install --transient --destroy-on-exit \
+  --virt-type qemu \  
   --osinfo "detect=on,name=$os" \
   `# --unattended does not yet support Ubuntu's new installer (https://github.com/canonical/subiquity)` \
   `# See https://gitlab.com/libosinfo/osinfo-db/-/merge_requests/579` \
