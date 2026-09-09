@@ -14,7 +14,7 @@ jobs:
         ./create-image /mnt/disk.iso "$disk"
       env:
          disk: /mnt/ubuntu.qcow2
-         source: https://cdimages.ubuntu.com/xubuntu/releases/24.04/release/xubuntu-24.04-desktop-amd64.iso
+         source: https://cdimages.ubuntu.com/xubuntu/releases/24.04/release/xubuntu-24.04.4-desktop-amd64.iso
     - uses: oras-project/setup-oras@HEAD
     - run: |
         cd /mnt
